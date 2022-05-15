@@ -112,7 +112,7 @@ button,input,select,textarea {
 
 body {
     color: var(--clr-neutral-900);
-    font-family: Alaska,sans-serif;
+    font-family: 'Cardo', serif;
     font-size: var(--fs-400);
     letter-spacing: -.5px
 }
@@ -193,8 +193,7 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
-    font-family: 'Cardo', serif;
+    font-size: 6rem;
 }
 .hero {
     display: flex;
