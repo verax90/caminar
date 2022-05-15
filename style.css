@@ -24,6 +24,162 @@
     --fs-800: 3.052rem
 }
 
+@media only screen and (min-width: 65em) {
+    :root {
+        --section-spacing:7rem
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    :root {
+        --fs-300:1rem;
+        --fs-400: 1.25rem;
+        --fs-500: 2rem;
+        --fs-600: 2.827rem;
+        --fs-700: 4rem;
+        --fs-800: 5.653rem
+    }
+}
+
+*,:after,:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+blockquote,body,dd,dl,figure,h1,h2,h3,h4,p {
+    margin: 0
+}
+
+ol[role=list],ul[role=list] {
+    list-style: none
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.6
+}
+
+a:not([class]) {
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto
+}
+
+img,picture {
+    display: block;
+    max-width: 100%
+}
+
+button,input,select,textarea {
+    font: inherit
+}
+
+@media (prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    *,:after,:before {
+        -webkit-animation-duration: .01ms!important;
+        animation-duration: .01ms!important;
+        -webkit-animation-iteration-count: 1!important;
+        animation-iteration-count: 1!important;
+        scroll-behavior: auto!important;
+        -webkit-transition-duration: .01ms!important;
+        transition-duration: .01ms!important
+    }
+}
+
+
+* {
+    font-variation-settings: "wght" var(--font-weight,375),"wdth" var(--font-width,80)
+}
+
+body {
+    color: var(--clr-neutral-900);
+    font-family: Alaska,sans-serif;
+    font-size: var(--fs-400);
+    letter-spacing: -.5px
+}
+
+h1,h2,h3,h4 {
+    --font-weight: 700;
+    --font-width: 80;
+    color: var(--clr-neutral-800);
+    font-stretch: 100%;
+    font-weight: 400;
+    line-height: 1.1
+}
+
+h1 {
+    --font-weight: 900;
+    color: var(--clr,var(--clr-primary-400))
+}
+
+.title {
+    font-size: clamp(var(--fs-600),1rem + 5vw,5rem)
+}
+
+.article-snippet-title {
+    --font-weight: 600
+}
+
+time+p {
+    font-size: 1.25em;
+    margin: 2em 0 1em!important
+}
+
+.h1,h1 {
+    font-size: --fs-800
+}
+
+.h2,h2 {
+    font-size: --fs-700
+}
+
+.h2,.h3,h2,h3 {
+    --flow-spacer: 1.5em
+}
+
+.h3,h3 {
+    font-size: --fs-600
+}
+
+.h4,h4 {
+    font-size: --fs-500
+}
+
+.text-small,small {
+    font-size: var(--fs-300)
+}
+
+strong {
+    --font-weight: 500;
+    font-weight: 400
+}
+
+a {
+    color: var(--clr,var(--clr-primary-400))
+}
+
+a:focus,a:hover {
+    color: var(--clr-primary-400);
+    text-decoration: none
+}
+
+li:not([class]),p:not([class]),ul:not([class]) {
+    max-width: 60ch
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh
+}
+
 h1 {
     font-size: 2rem;
     font-family: 'Cardo', serif;
